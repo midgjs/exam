@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>자바스크립트</h1>
+	
+	<h2>변수</h2>
+</body>
+
+<script type="text/javascript">
+	
+	/*변수선언법*/
+	/*자료형을 쓰지 않는다*/
+	console.log("변수선언");
+	
+	var no;
+	var str;
+	var boo;
+	
+	
+	
+	var myAge = 25;
+</script>
+<script type="text/javascript">	
+	
+	/*같은 이름 변수 선언*/
+	var person = "정우성";
+	var person = "이효리";
+	console.log(person)
+	var person = "유재석";
+	console.log(person);
+	
+</script>
+
+<script type="text/javascript">	
+	
+	/*대입시 자료형이 결정된다.*/
+	var data;
+	console.log(typeof data);
+	
+	data = 15;
+	console.log(typeof data);
+	
+	data = '안녕';
+	console.log(typeof data);
+	
+	data = 5>3;
+	console.log(typeof data);
+</script>
+<script type="text/javascript">	
+
+	/* undefined, null 비교*/
+	console.log("undefined, null비교");
+	
+	var myVar01;
+	var myVar02 = null;
+	
+	console.log(typeof myVar01);
+	console.log(typeof myVar02);
+
+
+</script>
+
+<script type="text/javascript">	
+
+	/* ==, === 비교 */
+	console.log("==, === 비교")
+
+	console.log("123" == 123); //true
+	console.log("123" === 123); //false  - 자료형도 비교(엄격)
+	
+	console.log(myVar01 == myVar02); //undefined == null  //true
+	console.log(myVar01 === myVar02); //undefined === null  //false
+	
+	console.log("" == false);
+	console.log("" == 0);
+	console.log(0 == false);
+	
+	console.log("" === false);  //false
+	console.log("" === 0);	//false
+	console.log(0 === false);	//false
+	
+	console.log("==========================")
+	console.log('' == false)
+	console.log('' === false)
+	
+	
+	
+	
+</script>
+
+
+
+
+
+
+</html>
