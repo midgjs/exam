@@ -5,20 +5,35 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<input id="left" type="text" value=""> + <input id="right" type = "text" value=""> <br>
-	<button id="btnPlus" type="button">더하기</button>
+
+	<input id="left" class="red" type="text" value=""> + <input id="right" type = "text" value=""> <br>
+	<button id="btnPlus" class="red" type="button" value="+">더하기</button>
 	
 	<p id="display">합계</p>
+	
 </body>
+
 <script type="text/javascript">
 window.onload = function(){
+	
+	var btn = document.getElementsByTagName("button");
+	console.log(btn);
+	
+	var inputs = document.getElementsByTagName("input");
+	console.log(inputs);
+	console.log(inputs[0]);
+	console.log(inputs[1]);
+	
+	var tags = document.getElementsByClassName("red");
+	console.log(tags);
+	console.log(tags[0]);
+	console.log(tags[1]);
+	
 	
 	var btnPlus = document.getElementById("btnPlus");
 	var left = document.getElementById("left");
 	var right = document.getElementById("right");
 	var display = document.getElementById("display");
-	
-	
 	
 	
 	//버튼을 클릭했을때(이벤트)
